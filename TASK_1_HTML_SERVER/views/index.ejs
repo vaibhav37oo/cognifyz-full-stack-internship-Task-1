@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Student Registration</h1>
+    <p>Fill in your details to register.</p>
+
+    <form action="/register" method="POST">
+
+        <label>Full Name</label>
+        <input type="text" name="name"
+               placeholder="Enter your name" required>
+
+        <label>Email</label>
+        <input type="email" name="email"
+               placeholder="Enter your email" required>
+
+        <label>Phone Number</label>
+        <input type="tel" name="phone"
+               placeholder="Enter phone number" required>
+
+        <label>Select Course</label>
+        <select name="course" required>
+            <option value="">Choose Course</option>
+            <option value="Full Stack Development">Full Stack Development</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Data Science">Data Science</option>
+            <option value="Artificial Intelligence">Artificial Intelligence</option>
+        </select>
+
+        <button type="submit">Register Now</button>
+
+    </form>
+</div>
+
+</body>
+</html>
